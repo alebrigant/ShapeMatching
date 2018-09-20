@@ -1,5 +1,5 @@
-# shape-matching
+# Shape matching
 
-# Authors & Contributors
-Murat Bronz
-Alice Le Brigant
+## Authors & Contributors
+* Murat Bronz
+* Alice Le Brigant
