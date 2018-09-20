@@ -201,10 +201,9 @@ def reparhor_R3(c0, phi0, gamma_f):
     return ch, k_new
 
 
-def geod_M_R3_p(ci, cf, m):
+def geod_M_R3(ci, cf, m):
     '''
      Developed by Alice Le Brigant
-     Translated into Python by Murat Bronz
 
      Calcule la géodésique SRV entre deux courbes dans R3, càd le chemin de
      courbes qui relie les origines par une droite et qui interpole
@@ -275,7 +274,7 @@ def geodshoothor_R3(ci, cf, m, p, Seuil):
 
     while ecart_courbes > Seuil :
         # Calcul de la géodésique avec discrétisation de taille n
-        c, L = geod_M_R3_p(ci, cf, m)
+        c, L = geod_M_R3(ci, cf, m)
         Lh.append(L)
         a += 1
         # Décomposition en parties horizontale et verticale de cs
