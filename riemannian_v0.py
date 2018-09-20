@@ -3,20 +3,20 @@
 
 import numpy  as np
 import scipy
-import pandas as pd
-import re
+#import pandas as pd
+#import re
 import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 #%config InlineBackend.figure_format = 'retina'
-import seaborn #plotting lib, but just adding makes the matplotlob plots better
-import glob # use this for file IO later
+#import seaborn #plotting lib, but just adding makes the matplotlob plots better
+#import glob # use this for file IO later
 #plt.style.use('ggplot')
 #import utility_functions as uf
 # %matplotlib notebook
 # mpld3. check this out for interactive plot options
 #import custom_functions as cf
-matplotlib.rcParams['agg.path.chunksize'] = 10000
+#matplotlib.rcParams['agg.path.chunksize'] = 10000
 
 
 def ReSampleCurve(c,N):
