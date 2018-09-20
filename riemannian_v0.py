@@ -9,7 +9,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 #%config InlineBackend.figure_format = 'retina'
-#import seaborn #plotting lib, but just adding makes the matplotlob plots better
+import seaborn #plotting lib, but just adding makes the matplotlob plots better
 #import glob # use this for file IO later
 #plt.style.use('ggplot')
 #import utility_functions as uf
@@ -380,8 +380,8 @@ def geod_L2_R3( gamma_i, gamma_f, m):
     return c_L2, dist_L2
 
 
-data1 = np.loadtxt('femme1.txt')
-data2 = np.loadtxt('femme2.txt')
+data1 = np.loadtxt('data/femme1.txt')
+data2 = np.loadtxt('data/femme2.txt')
 start = 199
 end = 220
 c1 = data1[start:end,:].T

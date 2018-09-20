@@ -3,13 +3,13 @@
 
 import numpy  as np
 import scipy
-#import pandas as pd
-#import re
+import pandas as pd
+import re
 import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 #%config InlineBackend.figure_format = 'retina'
-#import seaborn #plotting lib, but just adding makes the matplotlob plots better
+import seaborn #plotting lib, but just adding makes the matplotlob plots better
 #import glob # use this for file IO later
 #plt.style.use('ggplot')
 #import utility_functions as uf
@@ -422,8 +422,8 @@ class Curve(RiemannianMetric):
 
 # Main #
 # obtain the data
-data1 = np.loadtxt('femme1.txt')
-data2 = np.loadtxt('femme2.txt')
+data1 = np.loadtxt('data/femme1.txt')
+data2 = np.loadtxt('data/femme2.txt')
 start = 199
 end = 220
 # define the data section for the points
